@@ -91,6 +91,7 @@ async function getUser(req, res) {
     } catch (err) {
         console.log("getUser(500): Could not find user", err.msg);
         res.status(500).json(err.msg).end();
+        return;
     }
 }
 
@@ -127,6 +128,7 @@ async function followUser(req, res) {
     } catch (err) {
         console.log("followUser(500): Could not find user", err.msg);
         res.status(500).json(err.msg).end();
+        return;
     }
 
 
@@ -164,6 +166,7 @@ async function unfollowUser(req, res) {
     } catch (err) {
         console.log("followUser(500): Could not find user", err.msg);
         res.status(500).json(err.msg).end();
+        return;
     }
 
 
