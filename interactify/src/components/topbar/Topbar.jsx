@@ -3,12 +3,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { Link } from 'react-router-dom'
 
 function Topbar() {
   return (
     <div className="topbar-container d-flex align-items-center sticky-top">
-        <div className="topbar-left text-white">
-          <span className="logo ms-5 fw-bold">Interactify</span>
+        <div className="topbar-left">
+          <Link to="/" style={{textDecoration: "none"}}>
+            <span className="logo ms-5 fw-bold text-white">Interactify</span>
+          </Link>
         </div>
 
         <div className="topbar-center">

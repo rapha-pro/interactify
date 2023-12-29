@@ -5,6 +5,8 @@ import Rightbar from "../../components/rightbar/Rightbar";
 import "./profile.css";
 
 function Profile() {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER; //PF: Public folder
+  
   return (
     <>
         <Topbar/>
@@ -13,8 +15,8 @@ function Profile() {
             <div className="profile-right">
                 <div className="profile-rightTop">
                     <div className="profile-cover position-relative">
-                        <img src="assets/post/3.jpeg" alt="cover" className="profile-coverImg w-100" />
-                        <img src="assets/person/2.jpeg" alt="profile" className="profile-picture" />
+                        <img src={`${PF}post/3.jpeg`} alt="cover" className="profile-coverImg w-100" />
+                        <img src={`${PF}person/2.jpeg`} alt="profile" className="profile-picture" />
                     </div>
                     <div className="profile-info d-flex flex-column align-items-center justify-content-center">
                         <h4 className="profile-infoName fs-2 fw-semibold">Jack Carret</h4>

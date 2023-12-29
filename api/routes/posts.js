@@ -10,7 +10,7 @@ router.route("/:id")
 .delete(deletePost);
 
 router.put("/:id/like", likePost);
-router.get("/timeline/all", getTimelinePost); 
+router.get("/timeline/:userId", getTimelinePost); 
 
 
 
@@ -69,7 +69,7 @@ async function getPost(req, res) {
  */
 async function getTimelinePost(req, res) {
     try {
-        const currrentUser = await User.findById(req.body.userId);
+        const currrentUser = await User.findById(req.params.userId);
         let userPosts = await Post.find({ userId: currrentUser._id });
         let friendPosts = await Promise.all(
             currrentUser.followings.map((friendId) => Post.find({ userId: friendId }))

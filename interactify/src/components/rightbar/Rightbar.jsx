@@ -3,16 +3,18 @@ import { Users } from "../../dummyData"
 import Friend from "../friends/Friend";
 
 function Rightbar({profile}) {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER; //PF: Public folder
+
   const Advertisement = () => {
     return (
-      <img src="/assets/ad.png" alt="ad" className="rightbar-ad w-100 rounded my-4" />
+      <img src={`${PF}ad.png`} alt="ad" className="rightbar-ad w-100 rounded my-4" />
     );
   }
   const HomeRightbar = () => {
     return (
       <>
         <div className="birthday-container d-flex align-items-center gap-2">
-          <img src="/assets/gift.png" alt="birthday icon" className="giftImg" />
+          <img src={`${PF}gift.png`} alt="birthday icon" className="giftImg" />
           <span className="birthday-text">
             <b>your friend</b> and <b>3 other friends</b> have their birthday today
           </span>
@@ -22,7 +24,7 @@ function Rightbar({profile}) {
           <h6 className="rightbar-title fw-bold mb-3">Friends</h6>
           <ul className="rightbar-friendList">
             { Users.map((user) => (
-              <Friend key={user.id} profile={user.profilePicture} friendName={user.username} online={true}/>
+              <Friend key={user.id} profile={PF+user.profilePicture} friendName={user.username} online={true}/>
             ))}
           </ul>
         </div>
@@ -60,12 +62,12 @@ function Rightbar({profile}) {
         </div>
         <h4 className="rightbar-title">Friends</h4>
         <div className="rightbar-followings d-flex justify-content-between">
-          <FollowingItem profile={"assets/person/3.jpeg"} name={"Jaxk Keth"} />
-          <FollowingItem profile={"assets/person/7.jpeg"} name={"Jaxk Keth"} />
-          <FollowingItem profile={"assets/person/9.jpeg"} name={"Jaxk Keth"} />
-          <FollowingItem profile={"assets/person/2.jpeg"} name={"Jaxk Keth"} />
-          <FollowingItem profile={"assets/person/3.jpeg"} name={"Jaxk Keth"} />
-          <FollowingItem profile={"assets/person/7.jpeg"} name={"Jaxk Keth"} />
+          <FollowingItem profile={`${PF}person/7.jpeg`} name={"Jaxk Keth"} />
+          <FollowingItem profile={`${PF}person/3.jpeg`} name={"Jaxk Keth"} />
+          <FollowingItem profile={`${PF}person/9.jpeg`} name={"Jaxk Keth"} />
+          <FollowingItem profile={`${PF}person/2.jpeg`} name={"Jaxk Keth"} />
+          <FollowingItem profile={`${PF}person/3.jpeg`} name={"Jaxk Keth"} />
+          <FollowingItem profile={`${PF}person/7.jpeg`} name={"Jaxk Keth"} />
         </div>
 
       </>

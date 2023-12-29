@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const cors = require('cors');
 const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
@@ -25,6 +26,7 @@ db.on('open', function () {
 
 // MIDDLEWARES
 app.use(express.json());
+app.use(cors());
 
 // helps in securing express applications. 
 // It sets up various HTTP headers to prevent attacks like Cross-Site-Scripting(XSS), clickjacking, etc.
