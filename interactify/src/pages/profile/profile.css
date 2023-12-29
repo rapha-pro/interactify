@@ -1,0 +1,29 @@
+.profile-right {
+    flex: 9;
+}
+
+.profile-coverImg {
+    height: 40vh;
+    object-fit: cover;
+}
+
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23vh;
+    margin: auto;
+    border: 3px solid white;
+}
+
+.profile-info {
+    margin-top: 14vh;
+}
+
+.profile-bio {
+    font-weight: 300;
+}

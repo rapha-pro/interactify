@@ -1,0 +1,24 @@
+.sidebar-friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-friend-profile {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.online-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(22, 203, 22);
+    border-radius: 50%;
+    position: relative;
+    margin-top: 7%;
+    left: -2%;
+}

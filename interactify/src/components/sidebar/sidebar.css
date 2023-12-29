@@ -1,0 +1,37 @@
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 9vh);  /* because top bar is 9vh, else it will overflow */
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;       /* do not change, sticky doesn't work well without this*/
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-icon {
+    margin-right: 1rem;
+}
+
+.sidebar-button {
+    background: rgb(231, 231, 231);
+}
+
+.sidebar-button:hover {
+    background: rgb(215, 215, 215);
+    transition: all 0.5s linear;
+}

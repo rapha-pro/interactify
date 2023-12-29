@@ -1,0 +1,51 @@
+:root {
+    --main-color: #1775ee;
+}
+
+.register-container {
+    background: #f0f2f5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.register-wrapper {
+    width: 70%;
+    height: 70%;
+}
+
+.register-left, .register-right {
+    flex: 1;
+}
+
+.register-logo {
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.registerInput {
+    height: 2.7rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+    font-size: 1.1rem;
+    padding-left: 3%;
+}
+
+.registerInput:focus {
+    outline: none;
+}
+
+.registerButton {
+    height: 2.2rem;
+    background-color: var(--main-color);
+    font-weight: 500;
+}
+
+.register-right {
+    margin-left: 3.8%;
+}
+
+.register-register-button {
+    height: 2.2rem;
+    background-color: #1f9a06;
+    font-weight: 500;
+}

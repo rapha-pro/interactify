@@ -1,0 +1,23 @@
+.share {
+    height: 25vh;
+    -webkit-box-shadow: px 0px 16px -8px rgba (0,0,0,0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0,0,0,0.68);
+}
+
+
+.share-profileImg {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.share-input, .share-input:focus {
+    border: none;
+    outline: none;
+    width: 80%;
+}
+
+

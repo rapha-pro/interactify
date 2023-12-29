@@ -1,0 +1,55 @@
+:root {
+    --main-color: #1775ee;
+}
+
+.login-container {
+    background: #f0f2f5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-wrapper {
+    width: 70%;
+    height: 70%;
+}
+
+.login-left, .login-right {
+    flex: 1;
+}
+
+.login-logo {
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+.loginInput {
+    height: 2.7rem;
+    border-radius: 6px;
+    border: 1px solid gray;
+    font-size: 1.1rem;
+    padding-left: 3%;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.loginButton {
+    height: 2.2rem;
+    background-color: var(--main-color);
+    font-weight: 500;
+}
+
+.loginForgot {
+    color: var(--main-color);
+}
+
+.login-right {
+    margin-left: 3.8%;
+}
+
+.login-register-button {
+    height: 2.2rem;
+    background-color: #1f9a06;
+    font-weight: 500;
+}

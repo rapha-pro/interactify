@@ -1,0 +1,41 @@
+.rightbar {
+    flex: 3;
+    overflow-y: scroll;
+    position: sticky;
+    top: 50px;       /* do not change, sticky doesn't work well without this*/
+
+}
+
+.giftImg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.birthday-text {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.rightbar-friendList {
+    margin-left: -2rem;
+}
+
+.rightbar-infoKey {
+    font-weight: 500;
+    color: #555;
+}
+
+.rightbar-followings {
+    flex-wrap: wrap;
+}
+
+.rightbar-infoValue {
+    font-weight: 300;
+}
+
+.rightbar-followingImg {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
